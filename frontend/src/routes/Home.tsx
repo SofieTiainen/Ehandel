@@ -1,10 +1,12 @@
 import RenderProducts from "../features/RenderProducts";
+import { Header } from "../components/Header";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
         <div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate maxime, porro nobis placeat nulla repellendus! 
-                Doloribus eos, illum nesciunt, iure harum nemo culpa expedita, veritatis voluptate animi nam dolore voluptatem.</p>
+            <Header />
+            <Link to={'/HollyJollyHaven/cart'}>Varukorg</Link>
             <RenderProducts />
         </div>
     )

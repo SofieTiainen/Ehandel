@@ -30,6 +30,7 @@ const ProductDetail = ({ productId }: { productId: number }) => {
 
   return (
     <div>
+      <h3>Produkt</h3>
         <img src={url + product.imgUrl} alt={product.name} />
         <h3>{product.name} - {product.price} kr</h3>
         <p><strong>Beskrivning av produkt:  </strong>{product.description}</p>
